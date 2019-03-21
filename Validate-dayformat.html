@@ -3,22 +3,22 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Validate classname</title>
+    <title>Validate Date Format</title>
 </head>
 <body>
     <script>
-        function isValidateClassname(str) {
-            regexp = /^[CAP][0-9]{4}[GHIKLM]$/;
+        function isRightDayFormat(str) {
+            regexp = /^[0-9][0-9]*-[0-9][0-9]*-[0-9]{4}$/;
             if (regexp.test(str)) {
                 console.log("Is Validate Classname");
             } else {
                 console.log("Is not Validate Classname");
             }
         }
-        isValidateClassname('123456');
-        isValidateClassname('C0219H');
-        isValidateClassname('Abcdefg');
-        isValidateClassname('C0318G');
+        isRightDayFormat('02-05-1997');
+        isRightDayFormat('21-3-2019');
+        isRightDayFormat('Abcdefg');
+        isRightDayFormat('C0318G');
 
     </script>
 </body>

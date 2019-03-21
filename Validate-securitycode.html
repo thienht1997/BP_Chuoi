@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Validate security code</title>
+</head>
+<body>
+    <script>
+        function isValidateSecuritycode(str) {
+            regexp = /^[0-9]{6}/;
+            // gồm 6 chữ số liên tiếp
+            if (regexp.test(str)) {
+                console.log("Is Validate Security code");
+            } else {
+                console.log("Is not Validate Security code");
+            }
+        }
+        isValidateSecuritycode('123456');
+        isValidateSecuritycode('C0219H');
+        isValidateSecuritycode('111187');
+        isValidateSecuritycode('C0318G');
+
+    </script>
+</body>
+
+</html>
